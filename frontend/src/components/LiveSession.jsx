@@ -73,7 +73,7 @@ export default function LiveSession() {
     const imageData = canvas.toDataURL("image/jpeg");
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/analyze-frame", {
+      const response = await fetch("https://neurofocus-04hz.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
